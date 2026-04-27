@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy &amp; Terms of Use – KuzaPesa</title>
+    <style>
+        :root {
+            --gold:        #D4AF37;
+            --gold-light:  #F0D060;
+            --gold-dark:   #A88B20;
+            --black:       #0F0F0F;
+            --surface:     #1A1A1A;
+            --surface-2:   #242424;
+            --border:      #2E2E2E;
+            --text:        #ECEDEE;
+            --text-muted:  #9BA1A6;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--black);
+            margin: 0;
+            padding: 24px 16px 48px;
+        }
+
+        /* ── Header ── */
+        .header {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .logo-wrap {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            margin-bottom: 8px;
+        }
+
+        .logo-icon {
+            width: 64px;
+            height: 64px;
+            background: none
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 900;
+            color: #0F0F0F;
+            letter-spacing: -1px;
+            box-shadow: 0 4px 20px rgba(212,175,55,0.35);
+        }
+
+        .logo-icon img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+}
+        
+        .logo-name {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #D4AF37, #F0D060);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    background: linear-gradient(
+        90deg,
+        #A88B20,
+        #D4AF37,
+        #F0D060,
+        #D4AF37,
+        #A88B20
+    );
+
+    background-size: 300% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: goldWave 4s linear infinite;
+}
+
+        /* ── Container ── */
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--surface);
+            padding: 40px 44px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+        }
+
+        /* ── Tabs ── */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 36px;
+            gap: 12px;
+        }
+
+        .tab-btn {
+            padding: 10px 28px;
+            border: 1.5px solid var(--border);
+            background: var(--surface-2);
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 24px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.25s ease;
+        }
+
+        .tab-btn:hover {
+            border-color: var(--gold-dark);
+            color: var(--gold-light);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #D4AF37, #A88B20);
+            border-color: transparent;
+            color: #0F0F0F;
+        }
+
+        /* ── Content sections ── */
+        .content-section { display: none; }
+
+        .content-section.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes goldWave {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 300% center;
+    }
+}
+        /* ── Typography ── */
+        h2 {
+            font-size: 1.6rem;
+            color: var(--gold);
+            margin-top: 0;
+            margin-bottom: 6px;
+            padding-bottom: 12px;
+            border-bottom: 1.5px solid var(--border);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: var(--gold-light);
+            margin-top: 28px;
+            margin-bottom: 8px;
+        }
+
+        h4 {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        p { margin: 0 0 12px; color: var(--text); }
+
+        ul {
+            padding-left: 20px;
+            margin: 0 0 14px;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+            color: var(--text);
+        }
+
+        strong { color: var(--gold-light); }
+
+        a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        a:hover { text-decoration: underline; color: var(--gold-light); }
+
+        /* ── Highlight box ── */
+        .highlight-box {
+            background: var(--surface-2);
+            border-left: 3px solid var(--gold);
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 16px 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* ── Footer ── */
+        .last-updated {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 44px;
+            border-top: 1px solid var(--border);
+            padding-top: 22px;
+        }
+
+        .last-updated span {
+            color: var(--gold-dark);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            .container { padding: 24px 20px; }
+            .logo-name { font-size: 1.5rem; }
+            h2 { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <div class="logo-wrap">
+        <div class="logo-icon">
+            <img src="https://i.imgur.com/rBfmnru.png" alt="KuzaPesa Logo">
+        </div>
+        <span class="logo-name">KuzaPesa</span>
+    </div>
+
+    <p class="tagline">Grow Your Wealth</p>
+</div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('privacy')">Privacy Policy</button>
+        <button class="tab-btn" onclick="showTab('terms')">Terms of Use</button>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════
+         PRIVACY POLICY
+    ═══════════════════════════════════════════════ -->
+    <div id="privacy" class="content-section active">
+        <h2>Privacy Policy</h2>
+        <p>
+            <strong>Effective Date:</strong> April 7, 2026<br>
+            <strong>Last Updated:</strong> April 7, 2026
+        </p>
+
+        <h3>1. Introduction</h3>
+        <p>
+            KuzaPesa is committed to protecting your privacy. This Privacy Policy explains how we collect,
+            use, store, and protect your information when you use the KuzaPesa mobile application ("App") —
+            a regulated investment platform offering bonds, stocks, mutual funds, and real estate investment
+            products to users in Tanzania and East Africa.
+        </p>
+        <p>By using KuzaPesa, you consent to this Privacy Policy.</p>
+
+        <h3>2. Information We Collect</h3>
+
+        <h4>2.1 Information You Provide</h4>
+        <ul>
+<li>Full legal name</li>
+<li>Phone number (used for account creation and mobile money transactions)</li>
+<li>National ID or Passport number (for KYC verification)</li>
+<li>TIN (Taxpayer Identification Number for tax compliance in Tanzania)</li>
+<li>Date of birth</li>
+<li>Profile photo and selfie (for identity verification)</li>
+<li>Bank account details (for withdrawals)</li>
+<li>Email address (optional, for account recovery and statements)</li>
+<li>Feedback or support messages</li>
+</ul>
+
+        </ul>
+
+        <h4>2.2 Automatically Collected Information</h4>
+        <ul>
+            <li>Device information (model, OS version, settings)</li>
+            <li>Device identifiers (IDFV, advertising ID)</li>
+            <li>IP address and approximate location</li>
+            <li>Transaction logs and investment activity</li>
+            <li>Crash data and performance analytics</li>
+            <li>Login timestamps and session data</li>
+        </ul>
+
+        <h4>2.3 Financial Information</h4>
+        <ul>
+            <li>Mobile money transaction references</li>
+            <li>Wallet balance and transaction history</li>
+            <li>Investment portfolio holdings and returns</li>
+        </ul>
+
+        <h4>2.4 Optional Information</h4>
+        <ul>
+            <li>Location (if you grant permission, used for fraud prevention)</li>
+            <li>Biometric data (Face ID / fingerprint, stored only on your device — never transmitted to our servers)</li>
+        </ul>
+
+        <h3>3. How We Use Your Information</h3>
+        <ul>
+            <ul>
+<li>To create, verify, and manage your investment account</li>
+<li>To process deposits, withdrawals, and investment transactions</li>
+<li>To comply with KYC (Know Your Customer) and AML regulations</li>
+<li>To generate investment statements and tax reports</li>
+<li>To detect fraud or security threats</li>
+<li>To improve app performance</li>
+<li>To send transaction alerts</li>
+<li>To provide customer support</li>
+<li>To comply with regulatory obligations including CMSA and Bank of Tanzania</li>
+</ul>
+
+        </ul>
+
+        <div class="highlight-box">
+            We do <strong>NOT</strong> sell your personal data to third parties.
+        </div>
+
+        <h3>4. Sharing of Information</h3>
+        <p>We may share your information with:</p>
+        <ul>
+            <li><strong>Regulated financial partners</strong> — fund managers, bond issuers, and stockbrokers required to execute your investments</li>
+            <li><strong>Mobile money/Artel/Halotel/Mix by Yas / Vodacom</strong> — to process mobile money transactions</li>
+            <li><strong>KYC/AML providers</strong> — identity verification services (e.g., Smile ID, Onfido)</li>
+            <li><strong>Service providers</strong> — cloud hosting, analytics, and customer support tools</li>
+            <li><strong>Regulatory authorities</strong> — Capital Markets Authority (CMA), Tanzania Revenue Authority (TRA), or other bodies as required by law</li>
+            <li><strong>Legal authorities</strong> — if required by a valid court order or law enforcement request</li>
+        </ul>
+        <p>We do not control how third-party platforms use your data beyond what is necessary for the stated purpose.</p>
+
+        <h3>5. Data Storage &amp; Retention</h3>
+        <p>
+            We store your data securely using encryption (AES-256 at rest, TLS 1.2+ in transit) and
+            industry-standard protections on servers located within compliant jurisdictions.
+        </p>
+        <p>
+            We retain financial and KYC records for a minimum of <strong>7 years</strong> as required by
+            Tanzanian financial regulations, even after account closure.
+        </p>
+        <p>Non-financial personal data may be deleted upon verified account deletion request.</p>
+
+        <h3>6. Your Rights</h3>
+        <p>Depending on your region, you have the following rights regarding your personal data:</p>
+        <ul>
+            <li>
+                <strong>Access your data</strong> — You may request a copy of the personal data we hold about you.
+            </li>
+            <li>
+                <strong>Correct your data</strong> — You may request correction of inaccurate or incomplete personal data via <em>Profile → Personal Information</em>.
+            </li>
+            <li>
+                <strong>Delete your account and data</strong> — You may request deletion of your account and non-regulated personal data at any time.<br><br>
+                If you have access to the app: <em>Profile → Settings → Account → Delete Account</em>.<br><br>
+                If you cannot access the app, submit a deletion request to:
+                <a href="mailto:support@kuzapesa.co">support@kuzapesa.co</a>.
+            </li>
+            <li>
+                <strong>Withdraw consent</strong> — You may opt out of marketing communications at any time via <em>Settings → Notifications</em>.
+            </li>
+            <li>
+                <strong>Data portability</strong> — You may request an export of your transaction history and investment statements in PDF or CSV format.
+            </li>
+        </ul>
+        <p>Contact us at <a href="mailto:support@kuzapesa.co">support@kuzapesa.co</a> for any data requests.</p>
+
+        <h3>7. Children's Privacy</h3>
+        <p>KuzaPesa is strictly intended for users who are <strong>18 years of age or older</strong>.</p>
+        <p>We do not knowingly collect data from minors. If we discover that a minor has registered, we will immediately close the account and delete associated data.</p>
+
+        <h3>8. Changes to This Policy</h3>
+        <p>
+            We may update this Policy from time to time to reflect regulatory changes or new features.
+            We will notify you of material changes via in-app notification or email.
+            Continued use of the App after the effective date of changes constitutes your acceptance.
+        </p>
+
+        <h3>9. Contact</h3>
+        <p>📧 <a href="mailto:support@kuzapesa.co">support@kuzapesa.co</a></p>
+        <p>📍 Dar Es Salaam, Tanzania</p>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════
+         TERMS OF USE
+    ═══════════════════════════════════════════════ -->
+    <div id="terms" class="content-section">
+        <h2>Terms of Use</h2>
+        <p><strong>Last Updated:</strong> April 7, 2026</p>
+
+        <h3>1. Agreement to Terms</h3>
+        <p>
+            These Terms of Use constitute a legally binding agreement between you ("User", "you") and
+            <strong>KuzaPesa</strong> ("we", "us", "our"), concerning your access to and use of the
+            KuzaPesa mobile application and related investment services. By registering or using the App,
+            you confirm that you have read, understood, and agree to be bound by these Terms.
+        </p>
+
+        <h3>2. Eligibility</h3>
+        <ul>
+            <li>You must be at least <strong>18 years of age</strong>.</li>
+            <li>You must be a resident of Tanzania or an eligible East African jurisdiction.</li>
+            <li>You must have a valid national ID, passport, or equivalent government-issued identification.</li>
+            <li>You must complete KYC verification before making any investment or withdrawal.</li>
+        </ul>
+
+        <h3>3. Investment Services</h3>
+        <p>
+            KuzaPesa provides access to regulated investment products including government and corporate
+            bonds, listed equities (NSE), unit trusts / mutual funds, and real estate investment trusts
+            (REITs). All investments are subject to market risk.
+        </p>
+
+        <div class="highlight-box">
+            <strong>Important:</strong> Past performance of any investment product does not guarantee
+            future returns. The value of investments can go down as well as up. You may receive back
+            less than you invest.
+        </div>
+
+        <h3>4. Investment Risk Disclosure</h3>
+
+<div class="highlight-box">
+<strong>Important Investment Notice</strong>
+</div>
+
+<p>
+KuzaPesa is a financial technology platform that provides users with access to
+investment opportunities through licensed financial institutions, brokers,
+fund managers, and regulated investment partners.
+</p>
+
+<p>
+KuzaPesa itself is <strong>not a bank, not a broker-dealer, and not a licensed
+investment advisor</strong>. The platform operates as a digital interface that
+facilitates access to regulated financial products offered by authorised
+partners.
+</p>
+
+<p>
+All investments carry inherent risks. The value of investments may increase
+or decrease depending on market conditions. Past performance does not
+guarantee future returns.
+</p>
+
+<p>
+By using the KuzaPesa application, you acknowledge and accept that:
+</p>
+
+<ul>
+<li>All investments are made at your own risk.</li>
+<li>Investment returns are not guaranteed.</li>
+<li>You may lose part or all of your invested capital.</li>
+<li>KuzaPesa does not provide personalised financial advice.</li>
+</ul>
+
+<p>
+Users are encouraged to conduct their own research or consult a licensed
+financial advisor before making investment decisions.
+</p>
+        <h3>5. KYC &amp; Account Verification</h3>
+        <p>
+            To comply with the Capital Markets Authority (CMA) of Tanzania and Anti-Money Laundering (AML)
+            regulations, all users must complete identity verification (KYC) before transacting.
+            KYC levels determine transaction and investment limits:
+        </p>
+        <ul>
+            <li><strong>KYC Level 1 (Basic):</strong> Phone verification — wallet top-up up to Tzs 900,000/month.</li>
+            <li><strong>KYC Level 2 (Standard):</strong> National ID + selfie — investments up to Tzs 10,085,172/month.</li>
+            <li><strong>Corporate Account:</strong> Business registration documents — unlimited transactions with designated signatories.</li>
+        </ul>
+
+        <h3>6.Mobile Money Transactions</h3>
+        <p>
+            Deposits and withdrawals are processed via AzamPay. By initiating a transaction,
+            you authorise KuzaPesa to debit or credit your Mobile Money account for the stated amount.
+            Transaction fees, if any, will be disclosed before confirmation. KuzaPesa is not responsible
+            for delays caused by Safaricom network issues.
+        </p>
+
+        <h3>7. Group Investing (Chama or Kikundi)</h3>
+        <p>
+            KuzaPesa supports group investment accounts (Chama or Kikundi). Group administrators are responsible
+            for managing member contributions and investment decisions within the group. KuzaPesa is not
+            liable for disputes between group members. All group transactions are subject to the same
+            KYC and AML requirements as individual accounts.
+        </p>
+
+        <h3>8. Intellectual Property Rights</h3>
+        <p>
+            All content within the App — including source code, designs, graphics, investment data,
+            and branding — is the proprietary property of KuzaPesa or its licensors. You may not
+            reproduce, distribute, or create derivative works without our express written permission.
+        </p>
+
+        <h3>9.User Representations</h3>
+        <p>By using the Application, you represent and warrant that:</p>
+        <ul>
+            <li>All registration and KYC information you submit is true, accurate, current, and complete.</li>
+            <li>You will maintain the accuracy of your information and promptly update it as necessary.</li>
+            <li>You are not subject to any sanctions or prohibited from participating in financial markets.</li>
+            <li>You are acting on your own behalf and not as a nominee for an undisclosed third party.</li>
+        </ul>
+
+        <h3>10. Prohibited Activities</h3>
+        <p>You may not use the Application to:</p>
+        <ul>
+            <li>Conduct money laundering, terrorist financing, or any other illegal financial activity.</li>
+            <li>Provide false or misleading KYC information.</li>
+            <li>Attempt to gain unauthorised access to other users' accounts or our systems.</li>
+            <li>Use automated bots, scrapers, or scripts to access the App.</li>
+            <li>Circumvent investment limits or KYC requirements through multiple accounts.</li>
+        </ul>
+
+        <h3>11. User Consent &amp; Acknowledgement</h3>
+        <p>By using the Application, you expressly confirm and agree that:</p>
+        <ul>
+            <li>You are 18 years of age or older.</li>
+            <li>You understand that all investments carry risk and returns are not guaranteed.</li>
+            <li>You acknowledge that KuzaPesa is an investment platform and not a bank; your funds are not covered by deposit protection schemes unless specifically stated for a product.</li>
+            <li>You have read and accept the Privacy Policy and these Terms of Use.</li>
+            <li>You consent to receiving transaction notifications via SMS and in-app alerts.</li>
+        </ul>
+
+        <h3>12. Fees &amp; Charges</h3>
+        <p>
+            KuzaPesa may charge platform fees, management fees, or transaction fees depending on the
+            investment product. All applicable fees will be clearly disclosed before you confirm any
+            transaction. Fee schedules are available in the App under <em>Settings → Fee Schedule</em>.
+        </p>
+
+        <h3>13. Limitation of Liability</h3>
+        <p>
+            To the fullest extent permitted by applicable law, <strong>KuzaPesa</strong>, its owners,
+            developers, affiliates, and partners shall not be liable for any direct, indirect, incidental,
+            consequential, special, or punitive damages arising out of or related to your use of the
+            Application or any investment product.
+        </p>
+        <p>This includes, without limitation, damages resulting from:</p>
+        <ul>
+            <li>Market losses or investment underperformance</li>
+            <li>Errors, delays, interruptions, or loss of data</li>
+            <li>Reliance on any investment information, projections, or content provided in the App</li>
+            <li>Unauthorised access to your account due to your failure to secure your credentials</li>
+        </ul>
+
+        <div class="highlight-box">
+            KuzaPesa provides an investment platform and does not guarantee investment returns.
+            All investments are made at your own risk.
+        </div>
+
+        <h3>14. Disclaimer</h3>
+        <p>
+            The Application is provided on an <strong>"as is"</strong> and <strong>"as available"</strong>
+            basis, without warranties of any kind, whether express or implied. KuzaPesa does not warrant
+            that the App will be uninterrupted, secure, or error-free.
+        </p>
+
+        <h3>15. Governing Law</h3>
+        <p>
+            These Terms of Use shall be governed by and construed in accordance with the laws of the
+            <strong>Republic of Tanzania</strong>, including the Capital Markets Act (Cap. 485A) and the
+            Data Protection Act, 2019, without regard to conflict of law principles.
+        </p>
+        <p>
+            Any dispute arising out of or relating to these Terms or the use of the Application shall
+            be subject to the exclusive jurisdiction of the courts of Dar Es Salaam, Tanzania.
+        </p>
+        <p><strong>Continued use of the Application constitutes your acceptance of these Terms.</strong></p>
+
+        <h3>16. Account Deletion</h3>
+        <p>
+            Users have the right to close their KuzaPesa account at any time, subject to the settlement
+            of any outstanding investments or pending transactions.
+        </p>
+        <p>
+            If you have access to the app: <strong>Profile → Settings → Account → Delete Account</strong>.
+        </p>
+        <p>
+            If you cannot access the app, submit a deletion request to:
+            <a href="mailto:support@kuzapesa.co">support@kuzapesa.co</a>.
+        </p>
+        <p>
+            Note: Financial records and KYC data will be retained for 7 years as required by East African
+            financial regulations, even after account closure.
+        </p>
+
+        <h3>17. Contact Us</h3>
+        <p>
+            If you have questions or comments about these Terms, please contact us at:<br>
+            📧 <a href="mailto:support@kuzapesa.co">support@kuzapesa.co</a><br>
+            📍 Dar Es Salaam, Tanzania
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="last-updated">
+        &copy; 2026 <span>KuzaPesa</span>. All rights reserved. &nbsp;|&nbsp; Grow Your Wealth
+    </div>
+</div>
+
+<script>
+    function showTab(tabName) {
+        document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.getElementById(tabName).classList.add('active');
+        const btn = Array.from(document.querySelectorAll('.tab-btn'))
+            .find(b => b.getAttribute('onclick').includes(tabName));
+        if (btn) btn.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
