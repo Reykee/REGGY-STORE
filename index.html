@@ -631,7 +631,90 @@ another jurisdiction is required by mandatory consumer law.
 </div>
 
     <!-- PRODUCTS -->
+<!-- ADD THIS CSS TO YOUR STYLE SECTION -->
 
+<style>
+
+.slider-wrap{
+
+width:100%;
+
+overflow:hidden;
+
+margin-top:18px;
+
+border-radius:16px;
+
+border:1px solid #2E2E2E;
+
+}
+
+.slider-track{
+
+display:flex;
+
+width:max-content;
+
+gap:12px;
+
+padding:10px;
+
+animation:slideProducts 24s linear infinite;
+
+}
+
+.slider-track img{
+
+width:280px;
+
+height:340px;
+
+object-fit:cover;
+
+border-radius:14px;
+
+flex-shrink:0;
+
+}
+
+.slider-wrap:hover .slider-track{
+
+animation-play-state:paused;
+
+}
+
+@keyframes slideProducts{
+
+0%{
+
+transform:translateX(0);
+
+}
+
+100%{
+
+transform:translateX(-50%);
+
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.slider-track img{
+
+width:240px;
+
+height:300px;
+
+}
+
+}
+
+</style>
+    
 <div id="products" class="section">
 
 <h2>Featured Products</h2>
