@@ -1,2 +1,2 @@
-# Stuckbyyou-Legal-Information
+# REGGY STORE
 Legal Terms
